@@ -1,19 +1,20 @@
 import React from "react";
 import Card from "./components/Card";
+import "./App.css";
+
+// bg-red-500 hover:bg-blue-700
+// text-white font-bold py-2 px-4 rounded
 
 const App = () => {
   return (
-    <div className="container mx-auto">
-      <h1>Tailwind CSS</h1>
-      <div className="my-5 flex flex-wrap -mx-2">
-        <div className="w-full sm:w-1/2 lg:w-1/3 px-2 my-2">
-          <Card photo="https://picsum.photos/800/600" />
-        </div>
-        <div className="w-full sm:w-1/2 lg:w-1/3 px-2 my-2">
-          <Card photo="https://picsum.photos/800/600" />
-        </div>
-        <div className="w-full sm:w-1/2 lg:w-1/3 px-2 my-2">
-          <Card photo="https://picsum.photos/800/600" />
+    <div className="p-10">
+      <div className="max-w-sm shadow-lg p-5 max-w-sm rounded overflow-hidden">
+        <h3>Mahadi Hassan</h3>
+        <h4>Software Engineer</h4>
+        <h5>Spekter Gmbh</h5>
+        <div className="flex flex-row justify-around py-5	">
+          <button className="bg-green-500 px-5 py-2 rounded">Details</button>
+          <button>Next</button>
         </div>
       </div>
     </div>
